@@ -1,0 +1,72 @@
+/*  
+* SkippySlider core CSS file
+*/
+
+.slider {
+	position: relative;
+	margin-bottom: 20px;
+	line-height: 1;
+   	background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+}
+.slider-inner {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+.slider-control {
+	z-index: 15;
+	position: absolute;
+	top: 40%;
+	left: 15px;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 30px;
+	color: #ffffff;
+	text-align: center;
+	background: #222222;
+	border: 3px solid #ffffff;
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+	border-radius: 23px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.slider-control.right {
+	left: auto;
+	right: 15px;
+}
+.slider-control:hover {
+	z-index: 15;
+	color: #ffffff;
+	text-decoration: none;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+#skippySlider {
+	position: relative;
+	height: 500px;
+}
+
+#skippySlider img {
+}
+
+#skippySlider DIV {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8;
+	opacity: 0.0;
+}
+#skippySlider DIV.active {
+	z-index: 10;
+	opacity: 1.0;
+}
+#skippySlider DIV.last-active {
+	z-index: 9;
+}
